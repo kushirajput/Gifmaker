@@ -3,8 +3,8 @@ uvicorn
 pillow
 python-multipart
 rembg
+onnxruntime
 opencv-python-headless
 scikit-image
 numpy
 requests
-#sssssclear
