@@ -542,13 +542,5 @@ if __name__ == "__main__":
     print("🎨 Features: AI Background Removal + Transparent GIF Export")
     print("📁 Supported formats: JPG, PNG, BMP, TIFF, WebP (Max: 10MB)")
     print("⚠️  First conversion may be slower while loading AI model...")
-    
-
-port = int(os.environ.get("PORT", 8000))
-
-uvicorn.run(
-    app,
-    host="0.0.0.0",
-    port=port,
-    log_level="info"
-)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
